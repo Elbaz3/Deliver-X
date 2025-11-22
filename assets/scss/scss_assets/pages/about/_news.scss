@@ -32,6 +32,10 @@
     transition: 0.3s;
     position: relative;
 
+    @media (max-width: $laptop) {
+      gap: 30px;
+    }
+
     &:hover {
       transform: translateY(-20px);
 
@@ -48,6 +52,10 @@
     .card-bottom {
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: $laptop) {
+        flex-direction: column;
+      }
 
       > :first-child {
         color: $accent--primary-1;
@@ -68,6 +76,10 @@
           top: 10px;
           transform: translateY(-50%) rotate(-45deg);
           transition: 0.3s;
+
+          @media (max-width: $tablet) {
+            right: 0;
+          }
         }
       }
 
