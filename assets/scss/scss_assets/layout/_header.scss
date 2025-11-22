@@ -1,0 +1,79 @@
+header {
+  box-shadow: 0 4px 9px $general--shadow-01;
+}
+
+.header-content {
+  .logo-img {
+    width: 161px;
+  }
+
+  .nav-item {
+    padding-inline: 5px;
+  }
+
+  .nav-link {
+    color: $neutral--800;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.125em;
+    transition: 0.3s;
+    @media (max-width: $laptop) {
+      font-size: 28px;
+    }
+
+    &:hover {
+      color: $accent--primary-1;
+    }
+  }
+
+  .btn {
+    border-radius: 12px;
+    padding: 18px 24px;
+    font-size: 16px;
+    line-height: 1.125em;
+  }
+
+  .btn-download {
+    border: 1px solid $neutral--300;
+    box-shadow: 0 2px 6px 0 $button-shadow--white-01;
+    color: $neutral--800;
+    transition: 0.3s;
+
+    &:hover {
+      border-color: $accent--primary-1;
+      background-color: $accent--primary-1;
+      color: $neutral--100;
+    }
+  }
+
+  .btn-register {
+    background-color: $accent--primary-1;
+    border: 1px solid $accent--primary-1;
+    color: $neutral--100;
+    transition: 0.3s;
+
+    &:hover {
+      border-color: $secondary--color-1;
+      background-color: $secondary--color-1;
+    }
+  }
+}
+
+.navbar-collapse {
+  @media (max-width: $laptop) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100dvh - 120px);
+    background: #fff;
+    padding: 1rem;
+    z-index: 1000;
+    // transition: 0.1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

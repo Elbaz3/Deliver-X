@@ -1,0 +1,43 @@
+.about {
+  gap: 100px;
+
+  &__container {
+    padding: 0 25px;
+    gap: 100px;
+  }
+
+  .about--row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+
+    @media (max-width: $laptop) {
+      max-width: 680px;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+      &:first-of-type {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    .image {
+      width: 100%;
+      border-radius: 25px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .heading {
+      font-size: 44px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}

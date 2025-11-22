@@ -1,0 +1,25 @@
+// Variables and Mixins
+@import "./scss_assets/abstract/variables";
+@import "./scss_assets/abstract/mixins";
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Components
+@import "./scss_assets/abstract/components";
+
+// Reset
+@import "./scss_assets/base/reset";
+@import "./scss_assets/base/base";
+
+// Layout
+@import "./scss_assets/layout/header";
+@import "./scss_assets/layout/footer";
+
+// Page Parts
+@import "./scss_assets/pages/about/hero";
+@import "./scss_assets/pages/about/about";
+@import "./scss_assets/pages/about/our-journey";
+@import "./scss_assets/pages/about/our-partner";
+@import "./scss_assets/pages/about/news";
+@import "./scss_assets/pages/about/deliver";

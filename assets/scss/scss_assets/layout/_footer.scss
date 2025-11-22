@@ -1,0 +1,79 @@
+.footer {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 40px;
+    grid-row-gap: 50px;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
+
+    .footer-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      @media (max-width: $tablet) {
+        align-items: center;
+      }
+
+      & > :first-child {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        font-size: 18px;
+        color: $neutral--600;
+      }
+    }
+    .list-footer {
+      color: $accent--primary-1;
+      border-bottom: 3px solid $accent--primary-1;
+      padding-bottom: 6px;
+      font-weight: 700;
+      transition: border-color 0.3s, color 0.3s;
+
+      &:hover {
+        color: $neutral--800;
+        border-color: $neutral--800;
+      }
+    }
+
+    .places {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 29px;
+      grid-row-gap: 13px;
+
+      @media (min-width: $tablet) and (max-width: $laptop) {
+        grid-template-columns: 1fr;
+      }
+
+      .place-item {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .place-icon-wrapper {
+        border-radius: 24px;
+        overflow: hidden;
+      }
+
+      .place-name {
+        font-weight: bold;
+        font-size: 20px;
+
+        @media (max-width: $tablet) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

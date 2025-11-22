@@ -1,0 +1,32 @@
+// START SPECIAL HEADING
+.heading-title {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: bold;
+
+  .title {
+    color: $accent--primary-1;
+  }
+
+  .heading {
+    font-weight: bold;
+    color: $neutral--800;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 62px;
+    line-height: 1.161em;
+
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      font-size: 52px;
+    }
+  }
+
+  p {
+    color: $neutral--600;
+    font-weight: normal;
+
+    @media (max-width: $laptop) {
+      font-size: 18px;
+    }
+  }
+}
+// END SPECIAL HEADING

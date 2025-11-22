@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap styling -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- main styling -->
+    <link rel="stylesheet" href="/assets/scss/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white shadow py-4 px-4 position-relative">
+      <nav class="header-content navbar navbar-expand-lg py-0 position-static">
+        <div class="container-xl">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="/assets/images/logo.svg"
+              alt="logo"
+              width="30"
+              class="me-2 logo-img"
+            />
+          </a>
+
+          <!-- Right Side -->
+          <div class="header-right d-flex align-items-center gap-3">
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse gap-3" id="navbarNav">
+              <ul class="navbar-nav ms-md-auto align-items-lg-center gap-3">
+                <li class="nav-item">
+                  <a class="nav-link active text-danger fw-semibold" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="pagesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Page 1</a></li>
+                    <li><a class="dropdown-item" href="#">Page 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- Mobile CTA -->
+              <a class="btn btn-register fw-bold d-md-none w-100 mt-3" href="#"
+                >Get Started</a
+              >
+            </div>
+
+            <!-- Cart -->
+            <a class="nav-link" href="#">Cart(0)</a>
+
+            <!-- Desktop Buttons -->
+            <div
+              class="buttons-header d-none d-md-flex align-items-center gap-3 ms-4"
+            >
+              <a class="btn btn-download fw-medium" href="#">Download app</a>
+              <a class="btn btn-register fw-bold" href="#">Register</a>
+            </div>
+
+            <!-- Toggle -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main sections -->
+    <main>
+      <!-- START HERO SECTION -->
+      <section class="land">
+        <div
+          class="land-container container-xl d-flex flex-column align-items-center"
+        >
+          <div class="land__top">
+            <div class="land__top__left">
+              <div class="heading-title">
+                <div class="title">About Deliver X</div>
+                <h1 class="heading">
+                  We are here to help amazing restaurants get great customers
+                </h1>
+                <p class="mb-1">
+                  At morbi adipiscing sit sed consectetur senectus Dignissim sed
+                  amet tincidunt vitae ultricies ultrices amet fermentum amet
+                  neque et id sed lacinia massa pretium aliquam libero et.
+                </p>
+              </div>
+            </div>
+            <div class="land__top__right d-flex flex-column">
+              <div class="image">
+                <img
+                  width="300"
+                  class="img-fluid"
+                  src="./assets/images/about-hero-delivery-template.png"
+                  alt="person"
+                />
+              </div>
+              <div><img src="" alt="" /></div>
+              <div><img src="" alt="" /></div>
+            </div>
+          </div>
+
+          <div class="land__bottom">
+            <div>
+              <div>10M<span>+</span></div>
+              <p>Happy customers</p>
+            </div>
+            <div>
+              <div>500K<span>+</span></div>
+              <p>Restaurants available</p>
+            </div>
+            <div>
+              <div>30M<span>+</span></div>
+              <p>Successful deliveries</p>
+            </div>
+            <div>
+              <div>99.9%<span>+</span></div>
+              <p>Customer satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END HERO SECTION -->
+
+      <!-- START ABOUT SECTION -->
+      <section class="about">
+        <div class="about__container container-xl d-flex flex-column">
+          <div class="about__about-us about--row">
+            <div class="image">
+              <img
+                src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768fa223098a9258964e_image-2-stoy-about-delivery-template-p-1080.jpeg"
+                width="300"
+                alt="person"
+              />
+            </div>
+
+            <div class="heading-title">
+              <div class="title">About us</div>
+              <h2 class="heading">Our company started back in 2016</h2>
+              <p class="">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="about__our-mission about--row">
+            <div class="heading-title">
+              <div class="title">Our mission</div>
+              <h2 class="heading">
+                Our mission is to disrupt the food industry
+              </h2>
+              <p class="">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur.
+              </p>
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6201768ef5a81a9f9bf7b9e9_image-1-stoy-about-delivery-template-p-1080.jpeg"
+                width="300"
+                alt="About image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END ABOUT SECTION -->
+
+      <!-- START OUR-JOURNEY SECTION -->
+      <section class="our-journey">
+        <div class="our-journey__container container-xl">
+          <div class="our-journey__left">
+            <div class="heading-title">
+              <div class="title">Our journey</div>
+              <h2 class="heading">It has been a long but incredible journey</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+                egestas morbi sem vulputate etiam facilisis pellentesque ut
+                quis.
+              </p>
+            </div>
+            <div class="button">
+              <a href="">Download app</a>
+            </div>
+          </div>
+          <div class="our-journey__right">
+            <div class="heading-title">
+              <div class="title">2016</div>
+              <h3 class="heading">Deliver X was founded</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam.
+              </p>
+            </div>
+            <div class="heading-title">
+              <div class="title">2018</div>
+              <h3 class="heading">Raised Series A at $50M valuation</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam.
+              </p>
+            </div>
+            <div class="heading-title">
+              <div class="title">2019</div>
+              <h3 class="heading">Raised Series B at $600M valuation</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam.
+              </p>
+            </div>
+            <div class="heading-title">
+              <div class="title">2022</div>
+              <h3 class="heading">Raised Series C at $3B valuation</h3>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END OUR-JOURNEY SECTION -->
+
+      <!-- START OUR-PARTNER SECTION -->
+      <section class="our-partner">
+        <div class="our-partner__container container-xl">
+          <div class="heading-title text-center">
+            <div class="title">Our Partners</div>
+            <h3 class="heading fs-1">
+              We don’t walk alone, Deliver X works thanks to
+              <span>our partners</span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+              egestas morbi sem vulputate etiam facilisis pellentesque ut quis.
+            </p>
+          </div>
+          <div
+            class="partners d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5"
+          >
+            <div class="partner-card">
+              <div>
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b070212f9403ca3a97f_image-1-partners-delivery-template.svg"
+                  alt=""
+                />
+              </div>
+              <h3>Customers</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </div>
+            <div class="partner-card">
+              <div>
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b07238dadda77c03341_image-2-partners-delivery-template.svg"
+                  alt=""
+                />
+              </div>
+              <h3>Restaurants</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </div>
+            <div class="partner-card">
+              <div>
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b075b917b7d28e88cc8_image-3-partners-delivery-template.svg"
+                  alt=""
+                />
+              </div>
+              <h3>Riders</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END OUR-PARTNER SECTION -->
+
+      <!-- START NEWS SECTION -->
+      <section class="news">
+        <div class="news__container container-xl">
+          <div class="heading-title text-center">
+            <div class="title">Press & News</div>
+            <h2 class="heading fs-1">
+              See what the press says about Deliver X
+            </h2>
+          </div>
+          <div class="news-cards">
+            <div class="news-card">
+              <div>
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fab386a9117726aad8f_image-1-logo-press-delivery-template.svg"
+                  alt=""
+                />
+              </div>
+              <h3>Deliver X raises $26M in series B funding</h3>
+              <div class="card-bottom">
+                <div>Read more</div>
+                <div>January 22, 2023</div>
+              </div>
+            </div>
+            <div class="news-card">
+              <div>
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017facf5a81a3025f830c1_image-2-logo-press-delivery-template.svg"
+                  alt=""
+                />
+              </div>
+              <h3>Introducing curbside ordering with</h3>
+              <div class="card-bottom">
+                <div>Read more</div>
+                <div>Sep 18, 2022</div>
+              </div>
+            </div>
+
+            <div class="news-card">
+              <div>
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fac4a9181ff3e5b1fb1_image-3-logo-press-delivery-template.svg"
+                  alt=""
+                />
+              </div>
+              <h3>
+                Deliver X claims to be the #1 player in the delivery industry
+              </h3>
+              <div class="card-bottom">
+                <div>Read more</div>
+                <div>Nov 15, 2022</div>
+              </div>
+            </div>
+            <div class="news-card">
+              <div>
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fab7168b306f912ea93_image-4-logo-press-delivery-template.svg"
+                  alt=""
+                />
+              </div>
+              <h3>Introducing the Square POS integration with</h3>
+              <div class="card-bottom">
+                <div>Read more</div>
+                <div>Mar 12, 2022</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END NEWS SECTION -->
+
+      <!-- START DELIVER SECTION -->
+      <section class="deliver">
+        <div class="deliver-container container-xl">
+          <div class="d-flex flex-column">
+            <img
+              class="logo mb-4"
+              src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6216c3e8db8e185b2e172d35_logo-deliver-template.svg"
+              alt=""
+            />
+            <p class="fw-normal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+              eiusmod tempor incididunt ut.
+            </p>
+          </div>
+          <div
+            class="btns d-flex flex-column flex-lg-row align-items-center w-100"
+          >
+            <div class="btn">
+              <a href="#">
+                <img src="./assets/images/apple.svg" alt="apple" width="20" />
+                Download for iOS
+              </a>
+            </div>
+
+            <div class="btn">
+              <a href="#">
+                <img
+                  src="./assets/images/android.svg"
+                  alt="android"
+                  width="20"
+                />
+                Download for Android
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END DELIVER SECTION -->
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__container container-xl">
+        <div class="footer-list">
+          <div>Menu</div>
+          <div class="d-flex gap-5">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Blog</li>
+              <li>Blog posts</li>
+            </ul>
+            <ul>
+              <li>Plans</li>
+              <li>Plan single</li>
+              <li>Register</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-list">
+          <div>Utility pages</div>
+          <div>
+            <ul>
+              <li>Start here</li>
+              <li>Styleguide</li>
+              <li>Password protected</li>
+              <li>404 Not found</li>
+              <li>Licenses</li>
+              <li>Changelog</li>
+            </ul>
+            <a href="#" class="list-footer">Browse More Templates</a>
+          </div>
+        </div>
+        <div class="footer-list">
+          <div>Available in</div>
+          <div class="places">
+            <div class="place-item">
+              <div class="place-icon-wrapper">
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35beba8182905a8fd1c_icon-1-service-available-delivery-template.svg"
+                  alt="Delivery available in San Francisco, CA"
+                  class="place-icon"
+                />
+              </div>
+              <div class="place-name">San Francisco, CA</div>
+            </div>
+
+            <div class="place-item">
+              <div class="place-icon-wrapper">
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35beba818a369a8fd1e_icon-2-service-available-delivery-template.svg"
+                  alt="Delivery available in New York, NY"
+                  class="place-icon"
+                />
+              </div>
+              <div class="place-name">New York, NY</div>
+            </div>
+
+            <div class="place-item">
+              <div class="place-icon-wrapper">
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35b08dbc7d63e9b3811_icon-3-service-available-delivery-template.svg"
+                  alt="Delivery available in Los Angeles, CA"
+                  class="place-icon"
+                />
+              </div>
+              <div class="place-name">Los Angeles, CA</div>
+            </div>
+
+            <div class="place-item">
+              <div class="place-icon-wrapper">
+                <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/61fdd35b80572eda7e5d0c79_icon-4-service-available-delivery-template.svg"
+                  alt="Delivery available in Seattle, WA"
+                  class="place-icon"
+                />
+              </div>
+              <div class="place-name">Seattle, WA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      Copyright © Deliver X | Designed by <span>BRIX Templates</span> - Powered
+      by
+      <span>Webflow</span>
+    </div>
+    <!-- scripts -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
