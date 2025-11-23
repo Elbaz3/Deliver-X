@@ -25,10 +25,27 @@
     gap: 30px;
     color: $neutral--800;
     font-weight: 700;
+
+    .icon {
+      width: 218px;
+      height: 170px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
     p {
       text-align: center;
       font-weight: normal;
       font-size: 18px;
     }
   }
+}
+.partner-card:nth-child(1) .icon {
+  background-image: url("../images/person.svg");
+}
+.partner-card:nth-child(2) .icon {
+  background-image: url("../images/rest.svg");
+}
+.partner-card:nth-child(3) .icon {
+  background-image: url("../images/bike.svg");
 }
