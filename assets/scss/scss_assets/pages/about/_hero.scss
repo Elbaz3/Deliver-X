@@ -61,6 +61,7 @@
       grid-template-columns: 1fr 1fr;
       align-items: center;
       max-width: 600px;
+      font-size: 40px;
     }
 
     & > div {
@@ -70,6 +71,9 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      @media (max-width: $laptop) {
+        gap: 10px;
+      }
     }
 
     span {
@@ -80,6 +84,10 @@
       line-height: 1.111em;
       font-weight: 500;
       color: $neutral--600;
+
+      @media (max-width: $laptop) {
+        font-size: 14px;
+      }
     }
   }
 }
